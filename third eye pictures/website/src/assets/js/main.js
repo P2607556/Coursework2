@@ -121,48 +121,9 @@
     return false;
   });
 
-  // Testimonials carousel (uses the Owl Carousel library)
-  $(".testimonials-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      900: {
-        items: 3
-      }
-    }
-  });
 
-  // Brands carousel (uses the Owl Carousel library)
-  $('.owl-themebrands').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    navText: [
-      "<i class='icofont arrow-left'></i>",
-      "<i class='icofont arrow-right'></i>"
-    ],
-    autoplay: true,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 3
-      },
-      1000: {
-        items: 5
-      }
-    }
-  });
 
+  
   // Porfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -186,13 +147,7 @@
     });
   });
 
-  // Portfolio details carousel
-  $(".portfolio-details-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
-    loop: true,
-    items: 1
-  });
+
 
   // Init AOS
   function aos_init() {
